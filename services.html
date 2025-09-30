@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greatpath Trust - Financing Solutions</title>
+  <link rel="icon" type="image/x-icon" href="gplog.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white shadow-sm" x-data="{ mobileMenuOpen: false }">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold text-blue-600 flex items-center">
+        <img class="h-12 w-auto mr-2 rounded-full" src="gplog.png" alt="DreamFin Logo">
+        Greatpath Trust
+      </a>
+
+      <nav class="hidden md:flex space-x-8">
+        <a href="index.html" class="text-gray-600 hover:text-blue-600 transition">Home</a>
+        <a href="about.html" class="text-gray-600 hover:text-blue-600 transition">About</a>
+        <a href="services.html" class="text-blue-600 font-medium py-2">Services</a>
+        <a href="contact.html" class="text-gray-600 hover:text-blue-600 transition">Contact</a>
+      </nav>
+      <button class="md:hidden text-gray-600" @click="mobileMenuOpen = !mobileMenuOpen">
+        <i data-feather="menu"></i>
+      </button>
+    </div>
+
+    <div class="md:hidden bg-white shadow-lg" x-show="mobileMenuOpen" x-transition>
+      <div class="px-4 py-2 flex flex-col space-y-3">
+        <a href="index.html" class="text-gray-600 hover:text-blue-600 transition py-2">Home</a>
+        <a href="about.html" class="text-gray-600 hover:text-blue-600 transition py-2">About</a>
+        <a href="services.html" class="text-blue-600 font-medium py-2">Services</a>
+        <a href="contact.html" class="text-gray-600 hover:text-blue-600 transition py-2">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="bg-blue-600 text-white py-16">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Services</h1>
+      <p class="text-xl max-w-3xl">Flexible and affordable financing solutions tailored to your lifestyle, business, and future.</p>
+    </div>
+  </section>
+
+  <!-- Services List -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto space-y-8">
+
+        <!-- Service 1 -->
+        <div class="border border-gray-200 rounded-lg p-6 shadow-sm bg-gray-50">
+          <div class="flex items-center mb-4">
+            <div class="bg-blue-100 text-blue-600 p-3 rounded-lg mr-4">
+              <i data-feather="home" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-semibold">Household Purchases</h3>
+          </div>
+          <p class="text-gray-600 mb-4">
+            Flexible financing options for household items and essentials, helping you spread payments conveniently without stress.
+          </p>
+          <a href="contact.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg">
+            Apply Now
+          </a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="border border-gray-200 rounded-lg p-6 shadow-sm bg-gray-50">
+          <div class="flex items-center mb-4">
+            <div class="bg-teal-100 text-teal-600 p-3 rounded-lg mr-4">
+              <i data-feather="car" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-semibold">Car Financing</h3>
+          </div>
+          <p class="text-gray-600 mb-4">
+            Affordable car financing plans designed to make owning a new or used car easy, with repayment options that fit your budget.
+          </p>
+          <a href="contact.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg">
+            Apply Now
+          </a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="border border-gray-200 rounded-lg p-6 shadow-sm bg-gray-50">
+          <div class="flex items-center mb-4">
+            <div class="bg-orange-100 text-orange-600 p-3 rounded-lg mr-4">
+              <i data-feather="map" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-semibold">Real Estate & Land</h3>
+          </div>
+          <p class="text-gray-600 mb-4">
+            Financing solutions for land acquisition and property development, giving you access to both residential and commercial opportunities.
+          </p>
+          <a href="contact.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg">
+            Apply Now
+          </a>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="border border-gray-200 rounded-lg p-6 shadow-sm bg-gray-50">
+          <div class="flex items-center mb-4">
+            <div class="bg-purple-100 text-purple-600 p-3 rounded-lg mr-4">
+              <i data-feather="briefcase" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-semibold">Project Funding</h3>
+          </div>
+          <p class="text-gray-600 mb-4">
+            Tailored funding for personal or business projects, ensuring you get the capital you need to execute and achieve your goals.
+          </p>
+          <a href="contact.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg">
+            Apply Now
+          </a>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="border border-gray-200 rounded-lg p-6 shadow-sm bg-gray-50">
+          <div class="flex items-center mb-4">
+            <div class="bg-green-100 text-green-600 p-3 rounded-lg mr-4">
+              <i data-feather="book" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-semibold">Education Finance</h3>
+          </div>
+          <p class="text-gray-600 mb-4">
+            Education financing packages that cover tuition, fees, and related expenses, giving you or your children access to quality education.
+          </p>
+          <a href="contact.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg">
+            Apply Now
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Eligibility Calculator -->
+  <section class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto bg-blue-600 text-white rounded-xl p-8 shadow-lg">
+        <h2 class="text-3xl font-bold mb-6">Eligibility Calculator</h2>
+        <p class="mb-8">Check if you qualify for our financing options based on your profile.</p>
+
+        <form id="eligibilityForm" class="space-y-6">
+          <div>
+            <label class="block mb-2">Monthly Income (₦)</label>
+            <input type="number" id="monthlyIncome" class="w-full py-2 px-3 rounded border text-gray-800" required>
+          </div>
+
+          <div>
+            <label class="block mb-2">Annual Income (₦)</label>
+            <input type="number" id="annualIncome" class="w-full py-2 px-3 rounded border text-gray-800" required>
+          </div>
+
+          <div>
+            <label class="block mb-2">Monthly Expenses (₦)</label>
+            <input type="number" id="monthlyExpenses" class="w-full py-2 px-3 rounded border text-gray-800" required>
+          </div>
+
+          <div>
+            <label class="block mb-2">Service Required</label>
+            <select id="serviceType" class="w-full py-2 px-3 rounded border text-gray-800">
+              <option>Household Purchases</option>
+              <option>Car Financing</option>
+              <option>Real Estate & Land</option>
+              <option>Project Funding</option>
+              <option>Education Finance</option>
+            </select>
+          </div>
+
+          <button type="submit" class="bg-white text-blue-600 font-bold py-2 px-6 rounded-lg hover:bg-gray-100">
+            Check Eligibility
+          </button>
+        </form>
+
+        <div id="eligibilityResult" class="mt-6 text-lg font-semibold"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-12">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2025 Greatpath Trust Financial Services. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    feather.replace();
+
+    document.getElementById("eligibilityForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const monthlyIncome = parseInt(document.getElementById("monthlyIncome").value);
+      const annualIncome = parseInt(document.getElementById("annualIncome").value);
+      const monthlyExpenses = parseInt(document.getElementById("monthlyExpenses").value);
+
+      const disposableIncome = monthlyIncome - monthlyExpenses;
+      const resultBox = document.getElementById("eligibilityResult");
+
+      if (disposableIncome > 500000 && annualIncome > 6000000) {
+        resultBox.innerHTML = "✅ You are likely eligible for financing. Please proceed to Apply Now.";
+        resultBox.className = "mt-6 text-lg font-semibold text-green-300";
+      } else if (disposableIncome > 200000) {
+        resultBox.innerHTML = "⚠️ You may qualify, but further review will be required.";
+        resultBox.className = "mt-6 text-lg font-semibold text-yellow-300";
+      } else {
+        resultBox.innerHTML = "❌ Based on the details, eligibility is currently low.";
+        resultBox.className = "mt-6 text-lg font-semibold text-red-300";
+      }
+    });
+  </script>
+</body>
+</html>
